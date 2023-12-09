@@ -12,11 +12,11 @@
 </template>
 
 <script lang="ts" setup>
-  import { defineProps } from 'vue';
+  import { defineProps, PropType, ref } from 'vue';
 
   const props = defineProps({
     transactions: {
-      type: Array,
+      type: Array as PropType<ref<ITransaction>>,
       required: true,
     }
   });

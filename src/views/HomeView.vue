@@ -4,9 +4,9 @@
   </header>
   <main>
     <div class="container">
-      <Balance />
+      <Balance :total="total" />
       <IncomeExpense />
-      <TransactionList :transactions="total" />
+      <TransactionList :transactions="transactions" />
       <AddTransaction />
     </div>
   </main>
