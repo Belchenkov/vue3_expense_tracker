@@ -6,7 +6,10 @@
     <div class="container">
       <Balance :total="total" />
       <IncomeExpense :income="income" :expenses="expenses" />
-      <TransactionList :transactions="transactions" />
+      <TransactionList
+          :transactions="transactions"
+          @transactionDeleted="handleTransactionDeleted"
+      />
       <AddTransaction @transactionSubmitted="handleTransactionSubmitted" />
     </div>
   </main>
@@ -62,7 +65,13 @@ const handleTransactionSubmitted = (newTrData: IAddTransaction): void => {
     amount: newTrData.amount,
   });
 
-  toast.success('Transaction added!!!');
+  toast.success('Transaction added!');
+};
+
+const handleTransactionDeleted = (id: number) => {
+  transactions.value = transactions.value.filter((tr: ITransaction) => tr.id !== id);
+
+  toast.success('Transaction deleted!');
 };
 
 const generateUniqueId = (): number => {

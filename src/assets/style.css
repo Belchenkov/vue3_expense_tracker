@@ -118,6 +118,7 @@ input[type='number'] {
     color: #333;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     padding: 10px;
     margin: 10px 0;
@@ -133,8 +134,9 @@ input[type='number'] {
 
 .delete-btn {
     cursor: pointer;
-    background-color: #e74c3c;
-    border: 0;
+    /*background-color: #e74c3c;*/
+    border: 1px solid #e74c3c;
+    border-radius: 10px 0 0 10px;
     color: #fff;
     font-size: 20px;
     line-height: 20px;
