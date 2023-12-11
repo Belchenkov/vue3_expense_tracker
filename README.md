@@ -2,6 +2,8 @@
 
 > Build an expense tracker application from scratch using Vue.js 3 and the composition API with the latest syntax from version 3.2.
 
+![screenshot](./screen.png)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
